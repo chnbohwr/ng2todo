@@ -17,7 +17,7 @@ export class HymanComponent implements OnInit {
 
   async ngOnInit() {
     const result = await this.service.getPosts();
-    this.posts = result.data;
+    this.posts = result.json();
   }
 
 }
